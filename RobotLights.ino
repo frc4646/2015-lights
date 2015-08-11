@@ -38,7 +38,7 @@ void loop() {
 //    theaterChase(strip.Color(pgm_read_byte(&gamma[10]), pgm_read_byte(&gamma[31]), pgm_read_byte(&gamma[98])), 100);
 //    theaterChase(strip.Color(255, 255, 255), 100);
 //    theaterChase(strip.Color(255, 0, 0), 100);
-    if (team != 1) { // send 1 over i^2c for blue, 0 for red
+    if (team != 1) { // send 1 over I2C for blue, 0 for red
       theaterChase(strip.Color(0, 0, 200), 100);
     }
     if (team != 0) {
